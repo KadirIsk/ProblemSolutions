@@ -21,12 +21,18 @@
     <ClCompile Include="StringPermutation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StringReverse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QuestionTag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StringPermutation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringReverse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
