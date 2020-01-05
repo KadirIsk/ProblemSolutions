@@ -152,7 +152,10 @@
     <ClCompile Include="StringReverse.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Node.h" />
     <ClInclude Include="QuestionTag.h" />
+    <ClInclude Include="SLinkedList.h" />
+    <ClInclude Include="SLListReverse.h" />
     <ClInclude Include="StringPermutation.h" />
     <ClInclude Include="StringReverse.h" />
   </ItemGroup>

@@ -14,7 +14,9 @@ public:
 	SLinkedList() { this->count = 0; }
 	int getCount() { return this->count; }
 	std::shared_ptr<Node<T>> getHead() { return this->head; }
+	void setHead(std::shared_ptr<Node<T>> head) { this->head = head; }
 	std::shared_ptr<Node<T>> getTail() { return this->tail; }
+	void setTail(std::shared_ptr<Node<T>> tail) { this->tail = tail; }
 	bool deleteNode(std::shared_ptr<Node<T>>);
 	std::shared_ptr<Node<T>> deleteNode(int);
 	bool addNode(std::shared_ptr<Node<T>>);
