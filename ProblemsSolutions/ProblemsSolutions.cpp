@@ -9,23 +9,23 @@
 
 int main()
 {
-    QUESTIONTAG questionTag = QUESTIONTAG::SINGLYLLISTREVERSE;
+    QUESTIONTAG questionTag = QUESTIONTAG::SINGLY_LLIST_REVERSE;
 	switch (questionTag)
 	{
-	case QUESTIONTAG::STRINGPERMUTATION:
+	case QUESTIONTAG::STRING_PERMUTATION:
 	{
 		std::shared_ptr<std::string> str(std::make_shared<std::string>("XYZ"));
 		StringPermutation::findAllPermutation(str);
 	}
 	break;
-	case QUESTIONTAG::STRINGREVERSE:
+	case QUESTIONTAG::STRING_REVERSE:
 	{
 		std::shared_ptr<std::string> str(std::make_shared<std::string>("XYZ"));
 		str = StringReverse::reverse(str);
 		std::cout << *str << std::endl;
 	}
 	break;
-	case QUESTIONTAG::SINGLYLLISTREVERSE:
+	case QUESTIONTAG::SINGLY_LLIST_REVERSE:
 	{
 		std::shared_ptr<SLinkedList<int>> slinkedList = std::make_shared<SLinkedList<int>>();
 		std::shared_ptr<Node<int>> node;
