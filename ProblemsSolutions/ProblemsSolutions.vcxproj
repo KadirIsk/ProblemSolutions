@@ -156,6 +156,7 @@
     <ClInclude Include="QuestionTag.h" />
     <ClInclude Include="SLinkedList.h" />
     <ClInclude Include="SLListReverse.h" />
+    <ClInclude Include="SLListReverseWithoutRecursion.h" />
     <ClInclude Include="StringPermutation.h" />
     <ClInclude Include="StringReverse.h" />
   </ItemGroup>

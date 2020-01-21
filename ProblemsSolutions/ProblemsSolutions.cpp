@@ -6,10 +6,11 @@
 #include "StringReverse.h"
 #include "SLinkedList.h"
 #include "SLListReverse.h"
+#include "SLListReverseWithoutRecursion.h"
 
 int main()
 {
-    QUESTIONTAG questionTag = QUESTIONTAG::SINGLY_LLIST_REVERSE;
+    QUESTIONTAG questionTag = QUESTIONTAG::SINGLY_LLIST_REVERSE_WITHOUT_RECURSION;
 	switch (questionTag)
 	{
 	case QUESTIONTAG::STRING_PERMUTATION:
@@ -37,6 +38,21 @@ int main()
 		slinkedList->printList();
 		std::cout << std::endl << "REVERSED LINKED LIST :";
 		*slinkedList = SLListReverse<int>::reverse(*slinkedList);
+		slinkedList->printList();
+	}
+	break;
+	case QUESTIONTAG::SINGLY_LLIST_REVERSE_WITHOUT_RECURSION:
+	{
+		std::shared_ptr<SLinkedList<int>> slinkedList = std::make_shared<SLinkedList<int>>();
+		std::shared_ptr<Node<int>> node;
+		for (int i = 0; i < 10; i++) {
+			node = std::make_shared<Node<int>>(Node<int>(i + 1));
+			slinkedList->addNode(node);
+		}
+		std::cout << "SINGLY LINKED LIST   : ";
+		slinkedList->printList();
+		std::cout << std::endl << "REVERSED LINKED LIST :";
+		*slinkedList = SLListReverseWithoutRecursion<int>::reverseWithoutRecursion(*slinkedList);
 		slinkedList->printList();
 	}
 	break;
