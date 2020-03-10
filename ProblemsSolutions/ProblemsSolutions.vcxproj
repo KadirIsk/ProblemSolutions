@@ -147,11 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LongestSubstring.cpp" />
     <ClCompile Include="ProblemsSolutions.cpp" />
     <ClCompile Include="StringPermutation.cpp" />
     <ClCompile Include="StringReverse.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LongestSubstring.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="QuestionTag.h" />
     <ClInclude Include="SLinkedList.h" />

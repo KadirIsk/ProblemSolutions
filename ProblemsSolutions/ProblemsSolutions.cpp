@@ -7,10 +7,11 @@
 #include "SLinkedList.h"
 #include "SLListReverse.h"
 #include "SLListReverseWithoutRecursion.h"
+#include "LongestSubstring.h"
 
 int main()
 {
-    QUESTIONTAG questionTag = QUESTIONTAG::SINGLY_LLIST_REVERSE_WITHOUT_RECURSION;
+    QUESTIONTAG questionTag = QUESTIONTAG::LONGEST_SUBSTRING_WITHOUT_REPEATING_CHARACTERS;
 	switch (questionTag)
 	{
 	case QUESTIONTAG::STRING_PERMUTATION:
@@ -54,6 +55,12 @@ int main()
 		std::cout << std::endl << "REVERSED LINKED LIST :";
 		*slinkedList = SLListReverseWithoutRecursion<int>::reverseWithoutRecursion(*slinkedList);
 		slinkedList->printList();
+	}
+	break;
+	case QUESTIONTAG::LONGEST_SUBSTRING_WITHOUT_REPEATING_CHARACTERS:
+	{
+		std::shared_ptr<std::string> str(std::make_shared<std::string>("iqeoowueilsghqaizxefelisek"));
+		std::cout << LongestSubstring::findLongestSubstringLength(str);
 	}
 	break;
 	default:
